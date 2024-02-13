@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 5%;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    color: white;
+}
+
+
+.contato, .projetos, header {
+    background-color: #13293D;
+    color: white;
+}
+
+.tecnologias, .sobre {
+    color: #13293D;
+} 
+
+.menu {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.811);
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.menu a:hover{    
+    background-color: #457b9d;
+}
+
+/* Estilo da seção Home */
+.home {
+    padding: 25vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.home-img {
+    width: 60%;
+    margin: 10px;
+    transition: transform .2s; /* Animation */
+}
+
+.home-img:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.text-section {
+    flex: 1;
+    padding-bottom: 15%;
+}
+
+.text-section h1 {
+    padding-bottom: 20px;
+    font-size: 3.5rem;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilo da seção "Tecnologias" */
+.tecnologias h1 {
+    padding-bottom: 13vh;
+}
+
+.block-tecnologias {
+    display: block;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-tecnologias {
+    padding: 10px;
+}
+
+/* Estilo para a seção "Projetos" */
+.carousel-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os carrosséis quebrem para a próxima linha */
+    margin-bottom: -20px; /* Compensação para a margem inferior */
+    padding-top: 10vh;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: calc(33.33% - 20px); /* Considerando o padding entre os carrosséis */
+    margin-bottom: 20px;
+    margin-right: 20px; /* Espaçamento entre os carrosséis */
+    height: calc(50vh - 20px); /* Ajusta a altura para não ultrapassar 100vh */
+}
+
+.carousel__track-container {
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%; /* Ajusta a largura do track */
+}
+
+.carousel__slide {
+    flex: 0 0 33.33%; /* Define que cada slide ocupará 33.33% da largura do track */
+    max-width: 100%;
+}
+
+.carousel__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel__button--left {
+    left: 0;
+}
+
+.carousel__button--right {
+    right: 0;
+}
+
+.detalhes-button {
+    display: inline-block;
+    position: absolute;
+    padding: 10px 20px;
+    background-color: white;
+    color: #003049;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+ 
+.detalhes-button:hover {
+    background-color: #1d2d44;
+    color: #fff;
+}
+
+.detalhes-modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-content h2 {
+    padding-top: 20px;
+    color: #457b9d;
+}
+
+.modal-content p {
+    padding-top: 20px;
+    color: #000;
+    text-align: justify;
+}
+
+.close-button {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para a seção "Sobre" */
+
+.sobre-texto p {
+    color: #000;
+    padding: 50px 20px;
+    text-align: justify;
+}
+
+.sobre-habilidades {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.sobre-habilidades ul {
+    list-style: none;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.sobre-habilidades li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.sobre-habilidades li:hover {
+    background-color: #0056b3;
+}
+
+.sobre-habilidades p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a seção "Contato" */
+#contato {
+    text-align: center; /* Centralizar o conteúdo da seção "Contato" */
+    padding: 30px;
+}
+
+.contato-info {
+    margin-bottom: 40px;
+}
+
+.contato-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contato-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contato-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contato-info a:hover {
+    color: #0056b3;
+}
+
+.contato-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contato-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.contato-form textarea {
+    resize: vertical;
+}
+
+.contato-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para tornar o link clicável */
+.contato-form p {
+    margin-bottom: 0;
+}
+
+
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    section {
+        padding: 12%;
+    }
+
+    .text-section h1 {
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+    }
+    
+    .text-section p {
+        font-size: 0.8rem;
+    }
+
+    .menu a {
+        padding: 15px;
+    }
+
+    .home-img {
+        width: 90%;
+    }
+
+    .home {
+        padding: 25vh 5vh;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousel {
+        margin-bottom: 0px;
+        margin-right: 20px; /* Espaçamento entre os carrosséis */
+    }
+    
+    .carousel__button {
+        top: 25%;
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+
+    .detalhes-button {
+        bottom: 30%;
+    }
+
+    .carousel {
+        flex-basis: calc(100% - 20px);
+        margin: 0;
+        bottom: 70%;
+    }
+
+    .carousel__track-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .projetos {
+        height: 180vh;
+    }
+
+    .sobre-texto p {
+        padding: 30px 20px;
+    }
+
+    #contato {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .detalhes-button {
+        bottom: 20%; /* Ajuste conforme a tela aumenta */
+    }
+}
+
+@media (min-width: 600px) {
+    .detalhes-button {
+        bottom: 10%; /* Ajuste conforme a tela aumenta */
+    }
+}
+
+@media (min-width: 700px) {
+    .detalhes-button {
+        bottom: 5%; /* Ajuste conforme a tela aumenta */
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    .text-section h1 {
+        padding-bottom: 20px;
+        font-size: 2rem;
+    }
+    
+    .text-section p {
+        font-size: 1rem;
+    }
+
+    .home-img {
+        width: 60%;
+    }
+
+    .home {
+        padding: 25vh 5vh;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousel__button {
+        top: 25%;
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+}
+
+
+
+

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header id="home">
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="home">
+            <div class="text-section">
+                <h1>Front-End Developer</h1>
+                <p>Olá, eu sou Luis Eduardo, um desenvolvedor Front-End apaixonado por criar sites incríveis e responsivos. 
+                Tenho experiência com HTML, CSS e JavaScript, React, Django, Python, e estou sempre buscando aprender novas tecnologias e ferramentas.</p>
+            </div>
+            <div class="image-section">
+                <img class="home-img" src="images/front-end.jpeg" alt="imagem">
+                <img class="home-img" src="images/front end.png" alt="imagem">
+            </div>
+        </div>
+    </header>
+    <section id="tecnologias" class="tecnologias">
+        <h1>Tecnologias</h1>
+        <div class="block-tecnologias">
+            <img class="img-tecnologias" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" alt="python3"/>
+            <img class="img-tecnologias" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5"/>
+            <img class="img-tecnologias" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"/>
+        </div>
+        <div class="block-tecnologias">
+            <img class="img-tecnologias" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react"/>
+            <img class="img-tecnologias" src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="django"/>
+            <img class="img-tecnologias" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react-native"/>
+        </div>
+        <div class="block-tecnologias">
+            <img class="img-tecnologias" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="flutter"/>
+            <img class="img-tecnologias" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="mysql"/>
+            <img class="img-tecnologias" src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="c"/>
+        </div>
+        <div class="block-tecnologias">
+            <img class="img-tecnologias" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="java_script"/>
+            <img class="img-tecnologias" src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="dart"/>
+        </div>
+    </section>
+    <section id="projetos" class="projetos">
+        <h1>Projetos</h1>
+        <div class="carousel-container"> <!-- Adiciona a classe .carousel-container aqui -->
+            <div class="carousel">
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="images/Captura de Tela (128).png" alt="Imagem 1">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (129).png" alt="Imagem 2">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (130).png" alt="Imagem 3">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (131).png" alt="Imagem 4">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (132).png" alt="Imagem 5">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (133).png" alt="Imagem 6">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel__button carousel__button--left">Anterior</button>
+                <button class="carousel__button carousel__button--right">Próximo</button>
+                <button class="detalhes-button">Detalhes</button> <!-- Botão "Detalhes" -->
+                <div id="detalhes-modal-1" class="detalhes-modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <!-- Conteúdo dos detalhes do projeto -->
+                        <h2>Especificações do Projeto</h2>
+                        <p>
+                            Este é um site onde você pode compartilhar suas receitas. Eu criei o site usando Django para tornar mais fácil 
+                            a publicação de receitas e o gerenciamento do perfil do usuário. O sistema permite que você crie uma conta e poste 
+                            suas receitas. Todo o projeto foi feito com Django e conectado a um banco de dados PostgreSQL para guardar as 
+                            informações. Espero que você goste do projeto e fique à vontade para entrar em contato caso queira mais informações!
+                        </p>
+                        <h2>Tecnologias Utilizadas</h2>
+                        <img class="img-tecnologias" src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="django"/>
+                        <img class="img-tecnologias" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5"/>
+                        <img class="img-tecnologias" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"/>
+                        <img class="img-tecnologias" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="java_script"/>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="images/Captura de Tela (134).png" alt="Imagem 1">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (135).png" alt="Imagem 2">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (136).png" alt="Imagem 3">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (137).png" alt="Imagem 4">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (138).png" alt="Imagem 5">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (139).png" alt="Imagem 6">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel__button carousel__button--left">Anterior</button>
+                <button class="carousel__button carousel__button--right">Próximo</button>
+                <button class="detalhes-button">Detalhes</button> <!-- Botão "Detalhes" -->
+                <div id="detalhes-modal-2" class="detalhes-modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <!-- Conteúdo dos detalhes do projeto -->
+                        <h2>Especificações do Projeto</h2>
+                        <p>
+                            Este é o site oficial da Lovely Makeup. Eu criei o site usando HTML5 e CSS3 para exibir os produtos para os clientes 
+                            da loja. O site permite que você veja os produtos que estão disponíveis na loja física, junto com seus preços. 
+                            Todo o projeto foi feito com HTML5 e CSS3 para proporcionar uma melhor experiência ao cliente e fornecer informações 
+                            sobre os produtos disponíveis na loja. Espero que você goste do projeto e fique à vontade para entrar em contato 
+                            caso queira mais informações!
+                        </p>
+                        <h2>Tecnologias Utilizadas</h2>
+                        <img class="img-tecnologias" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5"/>
+                        <img class="img-tecnologias" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"/>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="images/Captura de Tela (65)_redimensionada.png" alt="Imagem 1">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (66)_redimensionada.png" alt="Imagem 2">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (67)_redimensionada.png" alt="Imagem 3">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (68)_redimensionada.png" alt="Imagem 4">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (69)_redimensionada.png" alt="Imagem 5">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (70)_redimensionada.png" alt="Imagem 6">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (71)_redimensionada.png" alt="Imagem 7">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (72)_redimensionada.png" alt="Imagem 8">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="images/Captura de Tela (73)_redimensionada.png" alt="Imagem 9">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel__button carousel__button--left">Anterior</button>
+                <button class="carousel__button carousel__button--right">Próximo</button>
+                <button class="detalhes-button">Detalhes</button> <!-- Botão "Detalhes" -->
+                <div id="detalhes-modal-3" class="detalhes-modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <!-- Conteúdo dos detalhes do projeto -->
+                        <h2>Especificações do Projeto</h2>
+                        <p>
+                            Este é o "Projeto de Gerenciamento de uma Clínica", onde desenvolvi um sistema em python para facilitar o 
+                            gerenciamento de uma clínica médica. O sistema permite o cadastro de médicos e recepcionistas, agendamento 
+                            de consultas, controle do atendimento de clientes, envio de consultas para os médicos responsáveis pelo 
+                            atendimento dos pacientes. O projeto foi desenvolvido utilizando as tecnologias python, com integração a um 
+                            banco de dados MySQL para armazenamento de informações. Espero que você goste do projeto e fique à vontade 
+                            para entrar em contato caso queira mais informações!
+                        </p>
+                        <h2>Tecnologias Utilizadas</h2>
+                        <img class="img-tecnologias" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" alt="python3"/>
+                        <img class="img-tecnologias" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="mysql"/>
+                    </div>
+                </div>
+            </div>        
+        </div> 
+    </section>
+    <section id="sobre" class="sobre">
+        <h1>Sobre</h1>
+        <div class="sobre-texto">
+            <p>Olá! Meu nome é Luís Eduardo, um entusiasta de Visão Computacional e desenvolvedor Front-End, atualmente cursando Sistemas de 
+            Informação. Tenho experiência em construção de modelos preditivos, processamento de imagens e desenvolvimento de sites responsivos 
+            e intuitivos. Python é minha linguagem de domínio. Atualmente, estou empenhado em um projeto que visa prever o câncer de mama em 
+            imagens histológicas. Estou sempre em busca de novos desafios para expandir meus conhecimentos e contribuir para projetos inovadores.</p>
+        </div>
+        <div class="sobre-habilidades">
+            <h3>Habilidades</h3>
+            <ul>
+                <li>Django</li>
+                <li>React</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Java_Script</li>
+                <li>Flutter</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>MySQL</li>
+                <li>OpenCV</li>
+                <li>TensorFlow</li>
+                <li>Keras</li>
+                <li>Deep Learning</li>
+                <li>PDI</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contato" class="contato">
+        <h1>Contato</h1>
+        <div class="contato-info">
+            <h3>Sinta-se à vontade para entrar em contato:</h3>
+            <p>Email: <a href="mailto:duardos36@gmail.com">duardos36@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/duardo10" target="_blank">https://github.com/duardo10</a></p>
+            <p>WhatsApp: <a href="mailto:(89)981209282">(89) 981209282</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/luis_eduardo_0612/" target="_blank">Luis Eduardo</a></p>
+        </div>
+        <div class="contato-form">
+            <h3>Fale Comigo</h3>
+            <form action="enviar_email.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="João da Silva">
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="joao.silva@example.com">
+    
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem aqui"></textarea>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Luis Eduardo. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        window.onload = function() {
+            var images = document.querySelectorAll('.home-img');
+            images.forEach(function(img, index) {
+                img.addEventListener('mouseover', function() {
+                    this.style.cursor = 'pointer';
+                    this.style.transform = 'scale(1.1)';
+                    this.style.transition = 'transform 0.5s';
+                });
+                img.addEventListener('mouseout', function() {
+                    this.style.transform = 'scale(1)';
+                });
+                img.addEventListener('click', function() {
+                    alert('Você clicou na imagem ' + (index + 1) + '!');
+                });
+            });
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const carousels = document.querySelectorAll('.carousel');
+
+            carousels.forEach(function(carousel) {
+                const track = carousel.querySelector('.carousel__track');
+                const slides = Array.from(track.children);
+                const slideWidth = slides[0].getBoundingClientRect().width;
+
+                // Arrange slides next to one another
+                const setSlidePosition = (slide, index) => {
+                    slide.style.left = slideWidth * index + 'px';
+                };
+                slides.forEach(setSlidePosition);
+
+                // Move slides
+                const moveToSlide = (track, currentSlide, targetSlide) => {
+                    track.style.transform = `translateX(-${targetSlide.style.left})`;
+                    currentSlide.classList.remove('current-slide');
+                    targetSlide.classList.add('current-slide');
+                };
+
+                // Button functionality
+                const prevButton = carousel.querySelector('.carousel__button--left');
+                const nextButton = carousel.querySelector('.carousel__button--right');
+                let currentSlide = track.querySelector('.current-slide');
+
+                prevButton.addEventListener('click', function() {
+                    const prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
+                    moveToSlide(track, currentSlide, prevSlide);
+                    currentSlide = prevSlide;
+                });
+
+                nextButton.addEventListener('click', function() {
+                    const nextSlide = currentSlide.nextElementSibling || slides[0];
+                    moveToSlide(track, currentSlide, nextSlide);
+                    currentSlide = nextSlide;
+                });
+            });
+        });
+
+        // Seleciona todos os botões "Detalhes"
+        document.querySelectorAll('.detalhes-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const modalId = this.nextElementSibling.getAttribute('id'); // Obtém o ID do modal irmão próximo
+                const modal = document.getElementById(modalId); // Encontra o modal correspondente
+
+                if (modal) {
+                    modal.style.display = 'block'; // Exibe o modal correspondente
+                }
+            });
+        });
+
+        // Seleciona todos os botões de fechar
+        document.querySelectorAll('.close-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const modalId = this.closest('.detalhes-modal').getAttribute('id'); // Obtém o ID do modal pai
+                const modal = document.getElementById(modalId); // Encontra o modal correspondente
+
+                if (modal) {
+                    modal.style.display = 'none'; // Esconde o modal correspondente
+                }
+            });
+        });
+
+        
+    </script>
+</body>
+</html>
