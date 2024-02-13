@@ -389,11 +389,11 @@ footer p {
 
     .menu a {
         padding: 15px;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .menu li {
-        margin: 0 3px; /* Espaçamento entre os itens do menu */
+        margin: 0 2px; /* Espaçamento entre os itens do menu */
     }
 
     .home-img {
