@@ -376,13 +376,42 @@ footer p {
     background-color: #0056b3;
 }
 
-/* Estilo para tornar o link clicável */
-.contato-form p {
-    margin-bottom: 0;
+
+
+
+/* Media queries para tornar o menu responsivo */
+@media screen and (max-width: 768px) {
+    .menu {
+        position: relative;
+    }
+
+    .menu ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.811);
+    }
+
+    .menu ul.open {
+        display: block;
+    }
+
+    .menu li {
+        float: none;
+        width: 100%;
+    }
+
+    .menu a {
+        display: block;
+        padding: 15px 20px;
+        text-align: center;
+    }
 }
 
 
-
+/*
 @media screen and (min-width: 400px) and (max-width: 800px) {
     section {
         padding: 12%;
@@ -415,7 +444,7 @@ footer p {
 
     .carousel {
         margin-bottom: 0px;
-        margin-right: 20px; /* Espaçamento entre os carrosséis */
+        margin-right: 20px; 
     }
     
     .carousel__button {
@@ -454,19 +483,19 @@ footer p {
 
 @media (min-width: 500px) {
     .detalhes-button {
-        bottom: 20%; /* Ajuste conforme a tela aumenta */
+        bottom: 20%; 
     }
 }
 
 @media (min-width: 600px) {
     .detalhes-button {
-        bottom: 10%; /* Ajuste conforme a tela aumenta */
+        bottom: 10%; 
     }
 }
 
 @media (min-width: 700px) {
     .detalhes-button {
-        bottom: 5%; /* Ajuste conforme a tela aumenta */
+        bottom: 5%; 
     }
 }
 
@@ -498,7 +527,7 @@ footer p {
         font-size: 1rem;
     }
 }
-
+*/
 
 
 
