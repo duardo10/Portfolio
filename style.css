@@ -377,7 +377,7 @@ footer p {
 
 
 
-@media screen and (min-width: 300px) and (max-width: 1800px) {
+@media screen and (min-width: 300px) and (max-width: 1199px) {
     .text-section h1 {
         padding-bottom: 20px;
         font-size: 1.5rem;
@@ -465,7 +465,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 1801px) and (max-width: 2000px) {
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
     .text-section h1 {
         padding-bottom: 20px;
         font-size: 2rem;
@@ -494,7 +494,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 2001px) {
+@media screen and (min-width: 1500px) {
     * {
         margin: 0;
         padding: 0;
