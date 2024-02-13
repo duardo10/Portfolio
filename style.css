@@ -378,10 +378,6 @@ footer p {
 
 
 @media screen and (min-width: 300px) and (max-width: 1800px) {
-    section {
-        padding: 12%;
-    }
-
     .text-section h1 {
         padding-bottom: 20px;
         font-size: 1.5rem;
@@ -393,6 +389,11 @@ footer p {
 
     .menu a {
         padding: 15px;
+        font-size: 0.8rem;
+    }
+
+    .menu li {
+        margin: 0 5px; /* Espaçamento entre os itens do menu */
     }
 
     .home-img {
@@ -493,19 +494,14 @@ footer p {
     }
 }
 
-@media screen and (min-width: 20001px) {
+@media screen and (min-width: 2001px) {
     header {
         width: 100%;
         height: 100vh; 
-        font-family: 'Times New Roman', Times, serif;
     }
 
     section {
         width: 100%;
         height: 100vh; 
-        text-align: center;
-        padding: 5%; 
-        font-size: 2rem;
-        font-weight: bolder;
     }
 }
