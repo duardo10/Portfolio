@@ -400,7 +400,7 @@ footer p {
     }
 
     .home {
-        padding: 10vh 0;
+        padding: 25vh 5vh;
         text-align: center;
         display: flex;
         justify-content: space-between;
