@@ -4,19 +4,18 @@
     box-sizing: border-box;
 }
 
-
 header {
     width: 100%;
-    height: 100vh;
+    height: 20vh; /* Ajustado para uma altura mais razoável */
     font-family: 'Times New Roman', Times, serif;
 }
 
 section {
     width: 100%;
-    height: 100vh;
+    height: auto; /* Ajustado para altura automática */
     text-align: center;
-    padding: 5%;
-    font-size: larger;
+    padding: 2%; /* Ajustado para um preenchimento menor */
+    font-size: medium; /* Ajustado para tamanho de fonte médio */
     font-weight: bolder;
 }
 
@@ -24,14 +23,13 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #000000;
-    padding: 20px;
+    padding: 10px; /* Ajustado para um preenchimento menor */
 }
 
 footer p {
-    font-size: 16px;
+    font-size: small; /* Ajustado para tamanho de fonte menor */
     color: white;
 }
-
 
 .contato, .projetos, header {
     background-color: #13293D;
@@ -40,7 +38,7 @@ footer p {
 
 .tecnologias, .sobre {
     color: #13293D;
-} 
+}
 
 .menu {
     width: 100%;
@@ -51,24 +49,24 @@ footer p {
 
 .menu ul {
     list-style: none;
-    display: block;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex; /* Alterado para exibição flexível */
+    justify-content: center; /* Centraliza os itens do menu */
 }
 
 .menu li {
-    float: left;
+    /* float: left; Removido para usar flex */
+    margin: 0 10px; /* Espaçamento entre os itens do menu */
 }
 
 .menu a {
     display: block;
     color: white;
-    padding: 20px;
+    padding: 10px; /* Ajustado para um preenchimento menor */
     text-decoration: none;
     transition: all 300ms ease-in-out;
 }
 
-.menu a:hover{    
+.menu a:hover {
     background-color: #457b9d;
 }
 
